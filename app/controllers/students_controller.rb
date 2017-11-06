@@ -22,4 +22,10 @@ class StudentsController < ApplicationController
     # , id: @student.id
   end
 
+  private
+
+  def student_params
+    params.require(:student).permit(:first_name, :last_name)
+  end
+
 end

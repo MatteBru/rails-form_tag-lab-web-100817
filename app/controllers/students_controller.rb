@@ -19,7 +19,7 @@ class StudentsController < ApplicationController
     # byebug
     # params[:id] = @student.id
     # byebug
-    redirect_to students_path
+    redirect_to student_path(@student)
     # , id: @student.id
   end
 

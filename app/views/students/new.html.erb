@@ -2,7 +2,7 @@
 <%= form_tag students_path do %>
 
 
-  <%= text_field_tag :'student[first_name]' %>
-  <%= text_field_tag :'student[last_name]' %>
+  <%= text_field_tag :'student[first_name]', nil, {id: "first_name"} %>
+  <%= text_field_tag :'student[last_name]', nil, {id: "last_name"} %>
   <%= submit_tag "Submit Student", html: {id: "Submit Student"} %>
 <% end %>

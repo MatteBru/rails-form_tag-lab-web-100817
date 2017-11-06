@@ -14,7 +14,8 @@ class StudentsController < ApplicationController
 
   def create
 
-    @student = Student.create(first_name: params[:first_name], last_name: params[:last_name])
+    @student = Student.create(student_params)
+    # first_name: params[:first_name], last_name: params[:last_name]
     # byebug
     # params[:id] = @student.id
     # byebug
